@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+
+background: 
+    linear-gradient(105deg, 
+    #ff0000, #ff4000, #ff8000, #ffbf00, #ffff00, 
+    #bfff00, #80ff00, #40ff00, #00ff00, #00ff40, 
+    #00ff80, #00ffbf, #00ffff, #00bfff, #0080ff, 
+    #0040ff, #0000ff, #4000ff, #8000ff, #bf00ff, 
+    #ff00ff, #ff00bf, #ff0080, #ff0040, #ff0066, 
+    #ff3399, #ff66cc, #ff99ff, #cc99ff, #9966ff, 
+    #6633ff, #3300ff, #0066ff, #00ccff, #00ffff, 
+    #00ffcc, #00ff99, #00ff66, #00ff33, #33ff00, 
+    #66ff00, #99ff00, #ccff00, #ffff33, #ffff66, 
+    #ffcc66, #ff9966, #ff6666, #ff3399, #ff66ff, 
+    #cc66ff, #9966cc, #663399);
+
+    background-size: 1500% 1500%;
+    animation: moveBg1 60s ease infinite;
+}
+
+@keyframes moveBg1 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-div {
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 20px;
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); 
+    margin-top: 5%;   
+}
+h1  {
+    font-size: xxx-large;
+}
+p   {
+    font-size: xx-large;
+}
